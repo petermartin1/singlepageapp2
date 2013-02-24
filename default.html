@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+<script type="text/javascript" data-main="js/app/main/main" src="js/lib/require-jquery.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+	<div class="offset3 span5">
+		<form class="form-horizontal">
+			<div class="control-group">
+				<label for="name" class="control-label">Name</label>
+				<div class="controls">
+					<input type="text" id="inputName" placeholder="Enter your name to say hello" data-bind="value: name, valueUpdate: 'keyup'">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="row">
+<div class="offset5 span5">
+<h1>Hello <span data-bind="text: name"></span></h1>
+</div>
+</div>
+</div>
+</body>
+</html>
